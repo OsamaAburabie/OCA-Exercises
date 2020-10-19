@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Enter Marks</title>
+	</head>
+	<body>
+		<h1>Enter Your Marks</h1>
+		<input type="text" id="s1" placeholder="Enter Math Marks" /><br />
+		<input type="text" id="s2" placeholder="Enter English Marks" /><br />
+		<input type="text" id="s3" placeholder="Enter Arabic Marks" /><br />
+		<input type="text" id="s4" placeholder="Enter Bio Marks" /><br />
+		<input type="text" id="s5" placeholder="Enter Computer Marks" /><br />
+		<input type="text" id="s6" placeholder="Enter Religion Marks" /><br />
+
+		<input type="submit" onclick="submit_marks()" />
+
+		<div id="demo"></div>
+
+		<script type="text/javascript">
+			name = window.prompt('Enter your Name');
+			const a = 6;
+			function submit_marks() {
+				var sub1 = parseInt(document.getElementById('s1').value);
+				var sub2 = parseInt(document.getElementById('s2').value);
+				var sub3 = parseInt(document.getElementById('s3').value);
+				var sub4 = parseInt(document.getElementById('s4').value);
+				var sub5 = parseInt(document.getElementById('s5').value);
+				var sub6 = parseInt(document.getElementById('s6').value);
+				var total = sub1 + sub2 + sub3 + sub4 + sub5 + sub6;
+				var per = total / a;
+				var grade;
+				if (per >= 50 && per <= 60) {
+					grade = 'Pass';
+				} else if (per >= 60 && per <= 70) {
+					grade = 'average';
+				} else if (per >= 70 && per <= 80) {
+					grade = 'good';
+				} else if (per >= 80 && per <= 90) {
+					grade = 'very good';
+				} else if (per >= 90 && per <= 100) {
+					grade = 'Excellent';
+				}
+				document.getElementById('demo').innerHTML =
+					' Your Total Marks : ' +
+					total +
+					'<br>Your Percentage : ' +
+					per +
+					'<br>Your Grade : ' +
+					grade;
+
+				// document.write("Your Total Marks : "+total);
+				// document.write("<br>Your Percentage : "+per);
+				// document.write("<br>Your Grade : "+grade);
+			}
+		</script>
+	</body>
+</html>

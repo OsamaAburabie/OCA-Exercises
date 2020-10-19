@@ -1,0 +1,70 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.maincontainer {
+	margin: 20vh auto;
+	position: relative;
+	width: 80vw;
+	height: 60vh;
+	background-image: url(body_bg.png);
+	display: flex;
+}
+
+.pikachu {
+	position: absolute;
+	color: rgb(238, 196, 10);
+	left: 58%;
+	font-size: 32px;
+}
+
+.pikachu::after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 10em;
+	background: rgb(238, 196, 10);
+	margin: 0em -0.5em -2em;
+	opacity: 0.35;
+}
+
+.pika {
+	position: absolute;
+	color: rgba(255, 208, 0, 0.658);
+	top: 40%;
+	left: 38%;
+	font-size: 25px;
+}
+
+.thecard {
+	position: absolute;
+	width: 30vw;
+	height: 60vh;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease;
+}
+
+.thecard:hover {
+	transform: rotateY(180deg);
+}
+
+.thefront {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	background-image: url(/body_bg.png);
+	color: #333;
+}
+
+.theback {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	background: #fafafa;
+	color: #333;
+	transform: rotateY(180deg);
+}

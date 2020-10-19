@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(211, 229, 238);
+}
+
+h1{
+    text-align: center;
+    color: brown;
+}
+
+h2{
+
+    text-align: center;
+    color:red;
+
+}
+
+h3{
+
+    text-align: center;
+    color:black;
+}
+
+#bigtext {
+    text-align: center;
+    color:rgb(194, 69, 11);
+
+}

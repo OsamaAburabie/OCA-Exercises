@@ -1,0 +1,28 @@
+body {
+    background-color: rgba(223, 218, 201, 0.822);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(241, 70, 70);
+}
+
+#lon {
+
+    color: rgb(0, 0, 0);
+
+
+}
+
+#html {
+
+
+    color: rgb(0, 0, 0);
+
+
+}
+
+#weekend {
+
+    color: red;
+}

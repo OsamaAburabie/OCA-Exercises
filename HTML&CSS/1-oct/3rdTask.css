@@ -1,0 +1,50 @@
+body {
+
+  background-color: antiquewhite;
+
+
+}
+
+
+
+
+
+
+#box-1 {
+  width: 75%;
+  border: 2px solid;
+  padding: 10px;
+  background-color: white;
+
+}
+
+.marker {
+
+  background-color: orange;
+}
+
+#box-2 {
+  width: 75%;
+  border: 2px solid;
+  padding: 10px;
+  background-color: white;
+
+}
+
+#box-3 {
+  width: 75%;
+  border: 2px dotted;
+  padding: 10px;
+  background-color: white;
+  color: red;
+
+}
+
+#box-3 p {
+
+  border: 2px dotted;
+
+  background-color: white;
+  color: red;
+
+}

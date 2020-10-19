@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			var arr = [];
+			function addTOarr() {
+				for (i = 1; i <= 10; i++) {
+					arr.push(i);
+				}
+			}
+			addTOarr();
+			// console.log(arr)
+			// ________________________________________
+			var oddarr = [];
+			var evenarr = [];
+			// ________________________________________
+			function oddOreven(anyarr) {
+				for (i = 0; i < anyarr.length; i++) {
+					// console.log(anyarr[i])
+					if (anyarr[i] % 2 == 1) {
+						oddarr.push(anyarr[i]);
+					} else {
+						evenarr.push(anyarr[i]);
+					}
+				}
+			}
+			// ________________________________________
+			oddOreven(arr);
+			console.log(oddarr);
+			console.log(evenarr);
+			// ________________________________________
+			function sum(anyarr) {
+				var total = 0;
+				for (i = 0; i < anyarr.length; i++) {
+					total = total + anyarr[i];
+				}
+				return total;
+			}
+			var oddsum = sum(oddarr);
+			var evensum = sum(evenarr);
+			console.log('the sum of odd numbers=', oddsum);
+			console.log('the sum of even numbers=', evensum);
+			// console.log(sum(oddarr))
+		</script>
+	</body>
+</html>
