@@ -1,0 +1,139 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+	font-family: sans-serif;
+}
+
+/*home page*/
+
+/* contact */
+
+.container {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.brand {
+	text-align: center;
+}
+
+.brand span {
+	color: #fff;
+}
+
+.wrapper > * {
+	padding: 1em;
+}
+
+.company-info {
+	text-align: center;
+	width: 50%;
+	background: #363636;
+	border: 2px solid black;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.company-info h3,
+.company-info ul {
+	text-align: center;
+	margin: 0 0 1rem 0;
+}
+
+.contact {
+	padding-top: 3rem;
+	width: 50%;
+	background: #363636;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0px 0px 15px 15px;
+	position: relative;
+}
+
+/*form style */
+.contact form {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 20px;
+}
+
+.contact form label {
+	display: block;
+}
+
+.contact form p {
+	margin: 0;
+}
+
+.contact form .full {
+	width: 20rem;
+}
+
+.contact form button,
+.contact form input {
+	width: 100%;
+	padding: 1em;
+	border: 1px solid #363636;
+}
+
+.contact form button {
+	background: #767d09;
+	border: 0;
+	color: white;
+	font-size: 20px;
+	border-radius: 30px;
+}
+
+.brand {
+	font-size: 40px;
+}
+
+.myname {
+	font-size: 30px;
+}
+.names {
+	border-radius: 10px;
+}
+.inputForm {
+	border-radius: 30px; /* CSS3 */
+	behavior: url('border-radius.htc');
+}
+
+#RightColumn {
+	background-color: White;
+}
+.myname {
+	color: white;
+}
+input {
+	font-family: Arial, FontAwesome;
+}
+.check {
+	color: white;
+	position: relative;
+}
+.check input {
+	position: absolute;
+	right: 18rem;
+}
+.check label {
+	position: absolute;
+	left: 2rem;
+}
+.full input {
+	display: none;
+}
