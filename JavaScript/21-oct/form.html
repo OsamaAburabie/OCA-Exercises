@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://kit.fontawesome.com/c20e40a942.js" crossorigin="anonymous"></script>
+
+
+  <title>Home</title>
+
+</head>
+
+<body>
+
+
+
+  <div class="container-form animated bounceInLeft">
+    <h2> Create an Account </h2>
+    <div id="error_message"> </div>
+    <div id="success_message"> </div>
+    <hr><br>
+    <form action="" id="form">
+      <div class="felid">
+        <div class="lable-columns">
+          <label for="name"> name key : </label>
+        </div>
+        <div class="input_columns">
+          <input type="text" id="nameKey" name="name" placeholder="&#xf2bd; Name key" class="fa fa-user icon " />
+        </div>
+      </div>
+      <div class="felid">
+        <div class="lable-columns">
+          <label for="email"> name value : </label>
+        </div>
+        <div class="input_columns">
+          <input type="text" id="nameValue" placeholder="&#xf2bd; Name value" class="fa fa-user icon " />
+        </div>
+      </div>
+
+
+
+      <br> <br>
+
+      <div class="felid">
+        <div class="lable-columns">
+          <label> </label>
+        </div>
+        <div class="lable-columns">
+          <button type="submit" onclick="saveSessionData()" id="submit_session" class="button"> session submit
+          </button>
+        </div>
+
+      </div>
+
+      <div class="felid">
+        <div class="lable-columns">
+          <label> </label>
+        </div>
+        <div class="lable-columns">
+
+          <button type="submit" onclick=" clearData()" id="submit_clear">Clear</button>
+        </div>
+
+      </div>
+
+
+      <div class="felid">
+        <div class="lable-columns">
+          <label> </label>
+        </div>
+
+        <div class="lable-columns">
+          <button type="submit" onclick="saveLocalData()" id="submit_clear">local submit </button>
+        </div>
+
+      </div>
+
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

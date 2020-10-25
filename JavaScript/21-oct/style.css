@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	top: 0;
+}
+
+input.empty {
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+}
+
+body {
+	background-color:rgba(231, 224, 233, 0.473);
+	font-family: sans-serif;
+	background-size: cover;
+}
+
+input[type='text'],
+input[type='date'] {
+	width: 100%;
+	padding: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 2rem;
+	resize: vertical;
+}
+
+label {
+	padding: 1rem 1rem 1rem 0;
+	display: inline-block;
+	font-size: 1.5rem;
+	text-shadow: 2px 2px rgba(138, 113, 86, 0.37);
+}
+
+
+
+button {
+	background-color: #4c2750;
+	color: white;
+	padding: 0.75rem;
+	border: none;
+	border-radius: 1rem !important;
+	cursor: pointer;
+	font-size: 1rem;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+	-webkit-transform: rotateY(15deg);
+	transform: rotateY(15deg);
+}
+
+
+.container-form {
+	border-radius: 1rem;
+	background-color: rgba(50, 9, 77, 0.658);
+	padding: 2rem;
+	border-radius: 1rem;
+	margin: 6rem auto;
+	color: whitesmoke;
+	width: 60%;
+}
+
+.h2 {
+	font-size: 2rem;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: #979494;
+	text-shadow: 2px 2px rgba(138, 113, 86, 0.37);
+	text-align: left;
+}
+
+.input_columns input:focus {
+	outline: 0;
+	border-color: #0c0c0c;
+}
+
+.lable-columns {
+	float: left;
+	width: 25%;
+	margin-top: 0.2rem;
+}
+
+.input_columns {
+	float: left;
+	width: 75%;
+	margin-top: 0.2rem;
+}
+
+
+
+/* Clear floats after the columns */
+.felid:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+	.lable-columns,
+	.input_columns {
+		width: 100%;
+		margin-top: 0;
+	}
+	.button {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+
+
+/*# sourceMappingURL=style.css.map */
